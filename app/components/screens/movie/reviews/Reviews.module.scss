@@ -1,0 +1,21 @@
+.addItem {
+}
+
+.review {
+	@apply rounded-md p-3 mb-10  bg-violet-200;
+
+	.avatarBlock {
+		@apply flex gap-2 mb-4 items-center;
+
+		.avatar {
+			@apply border-solid rounded-full mr-2;
+		}
+
+		.name {
+			@apply text-base;
+		}
+	}
+	.description {
+		@apply text-xs;
+	}
+}

@@ -1,0 +1,9 @@
+@import '../../../../../assets/styles/mixins';
+.search_top {
+	@apply mx-auto;
+	max-width: 600px;
+}
+.result {
+	@apply flex flex-wrap absolute z-10 p-5;
+	@include shadow('lg');
+}

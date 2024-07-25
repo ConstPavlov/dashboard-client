@@ -1,0 +1,20 @@
+.form_wrapper {
+	@apply relative inline-flex;
+
+	.form {
+		@apply p-4 absolute right-2 w-44 z-20 rounded-lg;
+		top: calc(100% + 1.44rem);
+		background-color: #d4d4e5;
+
+		.signInBtn {
+			@apply mt-5 mb-2 text-center;
+		}
+
+		.register {
+			@apply opacity-40 block w-full text-xs bg-white rounded-md;
+		}
+	}
+	.button {
+		@apply shadow-icon;
+	}
+}

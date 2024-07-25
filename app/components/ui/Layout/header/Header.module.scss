@@ -1,0 +1,14 @@
+.header {
+	@apply flex-center-between border-0 p-4 border-b-2 border-solid border-white;
+
+	.logoLink {
+		text-decoration: none;
+	}
+	.logo {
+		@apply text-xl text-black font-bold;
+	}
+
+	.loginBtns {
+		@apply flex-center-center gap-2;
+	}
+}

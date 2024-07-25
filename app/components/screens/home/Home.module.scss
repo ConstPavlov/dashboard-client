@@ -1,0 +1,6 @@
+.title {
+	@apply text-xl text-black mb-5;
+}
+.catalog {
+	@apply grid  grid-cols-4 gap-2;
+}

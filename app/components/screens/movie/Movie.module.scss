@@ -1,0 +1,37 @@
+.wrapper {
+	@apply grid mt-20 grid-cols-2 px-2;
+	.poster {
+		.img {
+			@apply w-4/6;
+			img {
+				@apply rounded-lg;
+			}
+		}
+	}
+
+	.detail {
+		.title {
+			@apply text-2xl mb-3 font-bold;
+		}
+		.rating {
+			@apply font-bold text-3xl mt-5 text-green-500;
+		}
+		.listName {
+			@apply text-lg mb-1.5;
+		}
+
+		ul {
+			@apply list-none pl-0;
+			li {
+				span {
+					&:first-child {
+						@apply text-gray-500 font-light w-24 mr-2 text-base;
+					}
+					&:last-child {
+						@apply text-base;
+					}
+				}
+			}
+		}
+	}
+}

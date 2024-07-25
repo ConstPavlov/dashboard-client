@@ -1,0 +1,23 @@
+.item {
+	@apply relative;
+	.rating {
+		@apply absolute -left-3 top-1.5 bg-green-600 text-white rounded-md py-1 px-3 text-center  text-sm;
+	}
+
+	.poster {
+		@apply rounded-lg overflow-hidden;
+	}
+
+	.heading {
+		@apply text-black font-bold transition-colors;
+	}
+	.fees {
+		@apply font-medium;
+	}
+
+	&:hover {
+		.heading {
+			@apply text-primary;
+		}
+	}
+}

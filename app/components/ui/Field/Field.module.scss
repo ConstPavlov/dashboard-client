@@ -1,0 +1,35 @@
+@import '../../../assets/styles/mixins';
+$gray: '#797979';
+.input {
+	@apply relative block mb-5;
+	> input {
+		@apply p-1.5 px-2 w-full text-xs  border-transparent bg-white rounded-lg;
+
+		@include shadow();
+		&::placeholder {
+			@apply text-gray-400 font-light text-xs tracking-wide;
+		}
+
+		&:focus {
+			@apply border-primary;
+		}
+	}
+	.icon {
+		@apply absolute top-2.5 left-2 text-stone-500 text-base;
+
+		&:hover {
+			@apply text-primary;
+		}
+	}
+
+	&.withicon {
+		> input {
+			@apply pl-10;
+		}
+	}
+}
+
+.error {
+	@apply absolute -bottom-5 left-0 w-full text-primary text-xs font-bold;
+	font-size: 0.75rem;
+}
